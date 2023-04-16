@@ -3,8 +3,8 @@ import os
 import pandas as pd
 
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-CACHE_DIR = os.path.join(BASE_DIR, "Projecto/cache")
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+CACHE_DIR = os.path.join(BASE_DIR, "files/cache")
 
 dataset = os.path.join(CACHE_DIR, 'stream-data.csv')
 
