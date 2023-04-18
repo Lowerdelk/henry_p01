@@ -119,10 +119,10 @@ def prod_per_county(tipo: str, pais: str, anio: int):
 @app.get('/get_contents/{rating}')
 def get_contents(rating: str):
     '''
-    Funcion para devolver cantidad de contenidos/productos disponibles que se publico segun pais y año.
+    Funcion para devolver cantidad de contenidos/productos disponibles segun clasificacion por edades.
 
     rating: Clasificacion por edades.
-    EX: movie
+    EX: 13+
     '''
     df = pd.read_csv(dataset)
     df = df[(df['rating']==rating)]
